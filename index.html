@@ -567,22 +567,22 @@
 
       <div>
         <h3 style="color:var(--amber); font-size:1.1rem; margin-bottom:18px;">Rezervace stolu</h3>
-        <form onsubmit="event.preventDefault(); alert('Formulář je zatím jen ukázkový — napojte ho na svůj e-mail nebo rezervační systém.');">
+        <form action="https://formspree.io/f/xzdnnddo" method="POST">
           <div class="field">
             <label for="jmeno">Jméno</label>
-            <input id="jmeno" type="text" placeholder="Vaše jméno" required>
+            <input id="jmeno" name="jmeno" type="text" placeholder="Vaše jméno" required>
           </div>
           <div class="field">
             <label for="email">E-mail</label>
-            <input id="email" type="email" placeholder="vas@email.cz" required>
+            <input id="email" name="email" type="email" placeholder="vas@email.cz" required>
           </div>
           <div class="field">
             <label for="pocet">Počet osob</label>
-            <input id="pocet" type="number" min="1" placeholder="2" required>
+            <input id="pocet" name="počet osob" type="number" min="1" placeholder="2" required>
           </div>
           <div class="field">
             <label for="zprava">Poznámka</label>
-            <textarea id="zprava" placeholder="Termín, alergie, přání..."></textarea>
+            <textarea id="zprava" name="poznámka" placeholder="Termín, alergie, přání..."></textarea>
           </div>
           <button type="submit" class="submitbtn">Odeslat rezervaci</button>
         </form>
